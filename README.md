@@ -12,8 +12,7 @@ The SfListView allows users work with MVVMCross Framework. Follow the below step
 3. Connect view and view model instead of binding context by registering them.
 4. Derive MainActivity and AppDelegate from MvxFormsAppCompatActivity and MvxFormsApplicationDelegate for initializing renderer.
 
-{% tabs %}
-{% highlight c# %}
+```sh
 public class CoreApp : MvvmCross.Core.ViewModels.MvxApplication
 {
     public override void Initialize()
@@ -26,11 +25,9 @@ public class CoreApp : MvvmCross.Core.ViewModels.MvxApplication
         RegisterNavigationServiceAppStart<ViewModels.MvxFormsViewModel>();
     }
 }
-{% endhighlight %}
-{% endtabs %}
+```
 
-{% tabs %}
-{% highlight c# %}
+```sh
 public class MvxFormsViewModel : MvxViewModel
 {
     public MvxFormsViewModel()
@@ -38,11 +35,9 @@ public class MvxFormsViewModel : MvxViewModel
 
     }
 }
-{% endhighlight %}
-{% endtabs %}
+```
 
-{% tabs %}
-{% highlight c# %}
+```sh
 public class MainActivity : MvxFormsAppCompatActivity
 {
     protected override void OnCreate(Bundle bundle)
@@ -63,8 +58,7 @@ public partial class AppDelegate : MvxFormsApplicationDelegate
         SfListViewRenderer.Init();
     }
 }
-{% endhighlight %}
-{% endtabs %}
+```
 
 For more details, refer to this [documentation](https://www.mvvmcross.com/documentation/getting-started/mvvmcross-overview).
 
