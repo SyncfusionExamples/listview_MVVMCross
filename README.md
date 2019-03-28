@@ -1,2 +1,6 @@
-# listview_MVVMCross
-Working with ListView in MVVMCross
+# Working with ListView in MVVMCross
+
+Requirements
+MVVMCross version - 5.3.1
+
+
